@@ -54,12 +54,14 @@ footer { display: flex; justify-content: space-between; gap: 20px; border-top: 2
 .skip { position: absolute; top: -100px; left: 20px; padding: 10px; background: var(--green); z-index: 5; }
 .skip:focus { top: 10px; }
 .mascot { position: absolute; right: 0; bottom: 16px; width: 88px; height: 99px; padding: 0; border: 0; background: transparent; cursor: pointer; z-index: 3; transform-origin: 50% 90%; animation: cat-sway 4s ease-in-out infinite; }
-.mascot canvas { width: 100%; height: 100%; image-rendering: pixelated; }
+.mascot { mix-blend-mode: multiply; }
+.mascot img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .mascot:hover { background: transparent; }
 .mascot:focus-visible { outline: 2px dashed var(--ink); outline-offset: 5px; }
-.mascot.sipping { animation: none; transform: translateY(-3px) rotate(-3deg); }
+.mascot.greeting { animation: cat-hello .6s ease-in-out; }
+@keyframes cat-hello { 0%, 100% { transform: rotate(0); } 30% { transform: rotate(-9deg) translateY(-4px); } 65% { transform: rotate(7deg) translateY(-4px); } }
 @keyframes cat-sway { 0%, 100% { transform: rotate(-2deg); } 50% { transform: translateY(-3px) rotate(2deg); } }
-@media(prefers-reduced-motion:reduce) { .mascot { animation: none; } }
+@media(prefers-reduced-motion:reduce) { .mascot, .mascot.greeting { animation: none; } }
 @media(max-width: 850px) {
   body { padding: 25px 22px 0; }
   .site-header { display: block; margin-bottom: 26px; }
