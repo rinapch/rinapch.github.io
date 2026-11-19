@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arina Puchkova · Machine Learning Researcher & Engineer</title>
+  <meta name="description" content="Arina Puchkova is a machine learning researcher and engineer in Munich, working on reinforcement learning, code models and post-training infrastructure.">
+  <meta name="theme-color" content="#f6f6f0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top">ARINA PUCHKOVA<span>Machine learning researcher & engineer · Munich</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#publications">Publications</a>
+      <a href="assets/Arina_Puchkova_Resume.pdf">CV ↗</a>
+    </nav>
+  <button class="mascot" type="button" aria-label="Give the cat a coffee break" title="Coffee break?">
+    <canvas width="32" height="36" aria-hidden="true"></canvas>
+  </button>
+  </header>
+  <main id="main">
+    <section class="intro" id="top" aria-labelledby="name">
+      <h1 id="name">Hi, I’m Arina<span>_</span></h1>
+      <div class="intro-columns">
+        <div class="bio">
+          <p>I work on <mark>reinforcement learning</mark>, code models and the infrastructure behind post-training. At JetBrains, my research spans reasoning efficiency, task interference and on-policy distillation.</p>
+          <p>I hold an MSc in Data Science from <a href="https://www.lmu.de/en/">LMU Munich</a>, with honours. Before that, I studied Political Science at HSE.</p>
+          <ul class="social" aria-label="Contact and professional profiles">
+            <li><a href="assets/Arina_Puchkova_Resume.pdf">CV (PDF) ↗</a></li>
+            <li><a href="mailto:arina.pchkva@gmail.com">Email ↗</a></li>
+            <li><a href="https://scholar.google.com/citations?user=-eq9kNwAAAAJ">Scholar ↗</a></li>
+            <li><a href="https://github.com/rinapch">GitHub ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/rinapch/">LinkedIn ↗</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="cv-section" id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Experience</h2>
+      <article class="entry">
+        <div class="entry-meta"><p>Aug 2024 — present</p><p>Munich, Germany</p></div>
+        <div><h3>JetBrains</h3><p class="role">Machine Learning Researcher</p>
+          <ul>
+            <li>Lead and contribute to research on reasoning efficiency, task interference and on-policy distillation, from hypothesis formation and experimental design to analysis and iteration.</li>
+            <li>Design and run distributed RL experiments for code generation and other tasks with NeMo-RL, Megatron-Core and VeRL.</li>
+            <li>Built Kubernetes reward infrastructure for distributed RL training, managing containers that apply model-generated code changes and run tests. Added container queuing, health checks and failure recovery, reducing training step time by <strong>15%</strong>.</li>
+            <li>Co-authored NeurIPS 2026 research on evaluating general coding capabilities.</li>
+          </ul>
+          <h4>Research Intern</h4>
+          <ul><li>Conducted multi-step RL experiments using execution feedback.</li><li>Filtered code completion training data, achieving a <strong>12% improvement</strong> on a Kotlin completion benchmark after fine-tuning.</li></ul>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-meta"><p>Aug 2021 — Oct 2023</p><p>San Francisco, US (Remote)</p></div>
+        <div><h3>Ex-Human</h3><p class="role">Machine Learning Engineer</p>
+          <ul>
+            <li>Trained generative models up to 34B parameters with parameter-efficient fine-tuning. Used TPUs to halve training time for GPT-J and T5.</li>
+            <li>Deployed and benchmarked models up to <strong>70B parameters</strong> with vLLM, TGI and NVIDIA Triton-LLM. Configured one-line deployment and maintained latency below 1.5 seconds per model instance.</li>
+            <li>Led development of safeguards for open-domain conversation, building safety classifiers and aligning the dialogue model to reduce unsafe outputs by <strong>52%</strong>.</li>
+            <li>Prepared instruction-tuning datasets from open-source and proprietary data.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-meta"><p>May — Oct 2021</p><p>Moscow, Russia</p></div>
+        <div><h3>Leroy Merlin</h3><p class="role">Data Analyst Intern</p><p>Analyzed search quality metrics and A/B tests, conducted customer interviews, and supported language and recommender models. Helped develop keyword extraction that improved search accuracy by 11%.</p></div>
+      </article>
+    </section>
+    <section class="cv-section" id="education" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <article class="entry"><div class="entry-meta"><p>Oct 2023 — Apr 2026</p></div><div><h3>LMU Munich</h3><p class="role">MSc Data Science · with honours</p><p>Grade 1.3 · Thesis grade 1.0</p><p class="thesis">Multi-turn Reinforcement Learning for Code Generation</p></div></article>
+      <article class="entry"><div class="entry-meta"><p>Sept 2018 — June 2022</p></div><div><h3>Higher School of Economics</h3><p class="role">BA Political Science · with honours</p><p>Minor in Data Analysis. GPA 9.36/10 in the major and 10/10 in the minor. Graduated in the top three of the class.</p></div></article>
+    </section>
+    <section class="cv-section" id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title">Publications</h2>
+      <article class="publication">
+        <h3><a href="https://arxiv.org/abs/2608.13566">Don’t Claim Benchmark-Oriented Optimization Improves General Coding Capability — Diverse Evaluation Is Required</a></h3>
+        <p class="publication-meta">NeurIPS 2026 · <a href="https://arxiv.org/pdf/2608.13566">Paper</a></p>
+      </article>
+      <article class="publication">
+        <h3><a href="https://link.springer.com/chapter/10.1007/978-3-030-90321-3_61">Fine-Tuning GPT-3 for Russian Text Summarization</a></h3>
+        <p class="publication-meta">CoMeSySo 2021 · Springer · <a href="https://arxiv.org/pdf/2108.03502">Paper</a></p>
+      </article>
+      <a class="text-link" href="https://scholar.google.com/citations?user=-eq9kNwAAAAJ">View Google Scholar ↗</a>
+    </section>
+    <section class="cv-section" aria-labelledby="skills-title">
+      <h2 id="skills-title">Tools & languages</h2>
+      <dl class="skills">
+        <div><dt>Programming</dt><dd>Python, SQL, R</dd></div>
+        <div><dt>ML & training</dt><dd>PyTorch, Hugging Face, NeMo-RL, Megatron-Core, VeRL, TRL, Ray, DeepSpeed</dd></div>
+        <div><dt>Inference & infrastructure</dt><dd>vLLM, TGI, Triton Inference Server, Kubernetes, Docker, GCP</dd></div>
+        <div><dt>Other tools</dt><dd>Git, Weights & Biases, Flask, Qdrant, Grafana</dd></div>
+        <div><dt>Languages</dt><dd>English (C1), Russian (native), German (B1)</dd></div>
+      </dl>
+    </section>
+  </main>
+  <footer><a href="mailto:arina.pchkva@gmail.com">arina.pchkva@gmail.com</a><a href="#top">Back to top ↑</a></footer>
+  <script src="mascot.js"></script>
+</body>
+</html>
